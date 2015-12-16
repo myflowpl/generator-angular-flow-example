@@ -1,0 +1,30 @@
+<div class="index-state" cg-busy="$promise">
+    <ul class="nav nav-pills sub-menu">
+        <!--menu-item-->
+    </ul>
+    <div class="jumbotron">
+        <h1>This is your main page :)</h1>
+        <p class="lead">
+            To edit this file go to: /public/src/app/_states/index/index-state.html<br>
+            there you can find this state controller nad styles
+        </p>
+        <p>
+            <a class="btn btn-lg btn-default" target="_blank" href="https://github.com/myflowpl/generator-angular-flow" role="button">
+                angular-flow docs
+            </a>
+        </p>
+
+        <h3>goodies</h3>
+
+        <button class="btn btn-info" ng-click="loadUsers()">loading bar test</button>
+
+        <button class="btn btn-success" ng-click="loadUsers2()">cg busy test</button>
+
+        <button class="btn btn-primary" modal="login">login modal test</button>
+
+        <pre ng-if="users">
+            {{users|json}}
+        </pre>
+    </div>
+    <ui-view></ui-view>
+</div>
