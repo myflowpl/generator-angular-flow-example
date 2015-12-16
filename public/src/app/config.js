@@ -15,7 +15,6 @@ angular.module('app')
         $httpProvider.interceptors.push(function($q, $timeout) {
             return {
                 'response': function(response) {
-                    pr('response', response)
                     var defer = $q.defer();
                     if(response.config.url.substr(-5)==='.json') {
                         $timeout(function() {
