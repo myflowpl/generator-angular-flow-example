@@ -5,6 +5,8 @@
 require('angular');
 
 angular.module('app',[
+    'ngAnimate',
+    'ngSanitize',
     'angularModals',
     'cgBusy',
     'angular-loading-bar',

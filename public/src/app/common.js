@@ -15,6 +15,8 @@ require('./libs/debug.js');
 
 require('angular');
 require('angular-modals');
+require('angular-animate');
+require('angular-sanitize');
 require('angular-busy2');
 require('angular-loading-bar');
 require('angular-ui-router');
