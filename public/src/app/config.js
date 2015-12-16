@@ -15,10 +15,15 @@ angular.module('app')
         $httpProvider.interceptors.push(function($q, $timeout) {
             return {
                 'response': function(response) {
+                    pr('response', response)
                     var defer = $q.defer();
-                    $timeout(function() {
+                    if(response.config.url.substr(-5)==='.json') {
+                        $timeout(function() {
+                            defer.resolve(response);
+                        }, 2300);
+                    } else {
                         defer.resolve(response);
-                    }, 2300);
+                    }
                     return defer.promise;
                 }
             };

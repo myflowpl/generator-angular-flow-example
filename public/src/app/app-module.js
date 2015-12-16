@@ -19,3 +19,4 @@ require('./services/api-srv.js');
 require('./_states/app/app-state.js');
 require('./_states/error/error-state.js');
 require('./_states/index/index-state.js');
+require('./modals/test/test-modal.js');
